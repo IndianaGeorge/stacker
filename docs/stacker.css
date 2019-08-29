@@ -6,13 +6,18 @@ body.stacker {
   border: 1px solid blue;
   transform: translateZ(1rem);
   box-shadow: -0.5rem 0.5rem 0.25rem 0px rgba(0,0,0,0.25);
+  background-color: white;
 }
 
 .stacker > * {
-  transform: rotateY(30deg) rotateX(30deg);
-  transform-style: preserve-3d;
+  transform: rotateY(30deg) rotateX(30deg) translateZ(1rem);
 }
 
 * {
   transition: transform 2s, border-width 2s;
+  transform-style: preserve-3d;
+}
+
+.stacker span, .stacker a {
+  display: inline-block;
 }
